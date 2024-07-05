@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+    <body>
+        <div class="main">
+            <h1 style=text-align:center;>Registration Form</h1>
+            
+            <form action="" onsubmit="validate()">
+            <fieldset>
+                <legend style=text-align:center;>Registration Form</legend>
+            <label> Firstname:</label>
+            <input type="text" id="firstname" placeholder="Firstname"><br><br>
+            <label> Lastname:</label>
+            <input type="text" id="lastname" placeholder="Lastname"><br><br>
+            <label> Fathername:</label>
+            <input type="text" id="fathername"placeholder="Fathername" ><br><br>
+            <label> Mothername:</label>
+            <input type="text" name="mothername" placeholder="Mothername"><br><br>
+            <label> Email:</label>
+            <input type="email"  id="email" placeholder="Email" ><br><br>
+            <label> Password</label>
+            <input type="password" id="password" placeholder="Password"><br><br>
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" >Male<br>
+            <input type="radio" name="gender" >Female<br><br>
+            <label>College:</label>
+            <select>
+                <option>AITS-Rajampet</option>
+                <option>AITS-Kadapa</option>
+                <option>AITS-Tirupati</option>
+                <option>AITS-Hyderabad</option>
+                <option>RGM</option>
+            </select><br><br>
+            <label>Branch:</label>
+            <select>
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>CIVIL</option>
+                <option>MECH</option>
+            </select><br><br>
+            <label>Date of joining:</label>
+            <input type="date"><br><br>
+            <label>Year:</label>
+            <input type="year"><br><br>
+            <label>End date:</label>
+            <input type="date"><br><br>
+            <label>Mobile no:</label>
+            <input type="text" ><br><br>
+            <label>Address field:</label><br>
+            <textarea rows="5" cols="20" placeholder="Address"></textarea><br><br>
+            <input type="Submit" name="submit" value="submit">
+            <input type="Reset" name="reset" value="reset">
+        </fieldset>
+        </form>
+        <script>
+            function validate(){
+                var email=document.getElementById("email");
+                var password=document.getElementById("password");
+                var fname=document.getElementById("firstname");
+                var lname=document.getElementById("lastname");
+                if(email.value==""){
+                    alert("Enter Email");
+                }
+                if(password.value==""){
+                    alert("Enter Password");
+                }
+                if(fname.value==""){
+                    alert("Enter firstname");
+                }
+                if(lname.value==""){
+                    alert("Enter lastname");
+                }
+
+            }
+        </script>
+        </div>
+    </body>
+</html>
